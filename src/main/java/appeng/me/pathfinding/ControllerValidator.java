@@ -60,7 +60,7 @@ public class ControllerValidator implements IGridVisitor {
             this.minZ = Math.min(pos.getZ(), this.minZ);
             this.maxZ = Math.max(pos.getZ(), this.maxZ);
 
-            if (this.maxX - this.minX < 7 && this.maxY - this.minY < 7 && this.maxZ - this.minZ < 7) {
+            if (this.maxX - this.minX < 128 && this.maxY - this.minY < 128 && this.maxZ - this.minZ < 128) {
                 this.setFound(this.getFound() + 1);
                 return true;
             }
